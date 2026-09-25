@@ -346,6 +346,7 @@ local config = {
 					"RAID"
 				}
 
+				-- todo: add suppport for Battlegrtround for Forever if that instance type exists.
 				if Addon.EXPANSION_LEVEL >= Addon.Expansion.TBC then
 					items["PVP"] = Addon.L["Battleground"]
 					items["ARENA"] = Addon.L["Arena"]
@@ -445,6 +446,7 @@ local config = {
 			return Utils.CreateLoadOption("")
 		end,
 		unpack = Utils.UnpackSimpleLoadOption,
+		-- todo: check support for Forever
 		testOnEvents = Addon.EXPANSION_LEVEL > Addon.Expansion.CLASSIC and
 			{ "PLAYER_TALENT_UPDATE", "PLAYER_LEVEL_CHANGED", "LEARNED_SPELL_IN_TAB", "TRAIT_CONFIG_CREATED", "TRAIT_CONFIG_UPDATED", "LEARNED_SPELL_IN_SKILL_LINE" } or
 			{ "PLAYER_TALENT_UPDATE", "PLAYER_LEVEL_CHANGED", "LEARNED_SPELL_IN_TAB", "TRAIT_CONFIG_CREATED", "TRAIT_CONFIG_UPDATED", "RUNE_UPDATED", "PLAYER_EQUIPMENT_CHANGED" },

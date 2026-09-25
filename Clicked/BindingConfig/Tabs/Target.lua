@@ -290,6 +290,7 @@ function Addon.BindingConfig.BindingTargetTab:DrawTargetUnit(container, index, c
 		Addon.TargetUnit.PARTY_5
 	}
 
+	-- todo: add support of focus for Forever, but only if the player has the focus frame enabled in the interface options
 	if Addon.EXPANSION_LEVEL >= Addon.Expansion.TBC then
 		items[Addon.TargetUnit.FOCUS] = Addon.L["Focus"]
 		table.insert(order, 7, Addon.TargetUnit.FOCUS)

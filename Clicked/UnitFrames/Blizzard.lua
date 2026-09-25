@@ -91,6 +91,7 @@ function Addon:RegisterBlizzardUnitFrames()
 
 	HookUnitFrame(5, "Boss%dTargetFrame")
 
+	-- todo: add support of focus for Forever, but only if the player has the focus frame enabled in the interface options
 	if Addon.EXPANSION_LEVEL >= Addon.Expansion.TBC then
 		Clicked:RegisterClickCastFrame("FocusFrame")
 		Clicked:RegisterClickCastFrame("FocusFrameToT")

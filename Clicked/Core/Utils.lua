@@ -213,6 +213,8 @@ else
 			{ 32223 } -- Crusader Aura
 		}
 	end
+	
+	-- todo: check new  forms in Forever and add support for them (at least druid, maybe paladin — and check ids for all)
 end
 
 --- @type string[]

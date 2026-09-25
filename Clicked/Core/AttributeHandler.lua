@@ -17,6 +17,7 @@
 --- @class ClickedInternal
 local Addon = select(2, ...)
 
+-- todo: check if that is available in Forever, and if so, add support for it
 local hasTypeRelease = Addon.EXPANSION_LEVEL >= Addon.Expansion.DF or Addon.EXPANSION_LEVEL == Addon.Expansion.TBC
 
 local frameCache = {}

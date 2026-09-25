@@ -58,6 +58,7 @@ do
 	-- for example Pandaran has three race IDs: 24, 25, 26 for neutral, alliance and horde respectively, but we
 	-- only need to register 24 as they all have the same englishRaceName.
 
+	-- todo: Add new race for Forever
 	AddRace(1, Addon.Expansion.CLASSIC) -- Human
 	AddRace(2, Addon.Expansion.CLASSIC) -- Orc
 	AddRace(3, Addon.Expansion.CLASSIC) -- Dwarf
@@ -272,6 +273,7 @@ function Addon:GetLocalizedTargetUnits()
 		Addon.TargetUnit.PARTY_5
 	}
 
+	-- todo: add support of focus for Forever, but only if the player has the focus frame enabled in the interface options
 	if Addon.EXPANSION_LEVEL >= Addon.Expansion.TBC then
 		items[Addon.TargetUnit.FOCUS] = Addon.L["Focus"]
 		table.insert(order, 7, Addon.TargetUnit.FOCUS)

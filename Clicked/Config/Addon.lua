@@ -56,6 +56,7 @@ function AddonOptions:CreateOptionsTable()
 					return not Addon.db.profile.options.minimap.hide
 				end
 			},
+			-- todo: check if that is available in Forever, and if so, add support for it
 			addonCompartmentButton = {
 				name = Addon.L["Enable addon compartment button"],
 				desc = Addon.L["Enable or disable the addon compartment button."],
